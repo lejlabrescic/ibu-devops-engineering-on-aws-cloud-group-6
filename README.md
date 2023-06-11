@@ -9,8 +9,8 @@
 This is a repository for the project on the course DevOps Engineering on AWS Cloud (IT 334) at the International Burch University. 
 Project was done on the AWS Academy platform and the goal was to build a highly available and scalable web application. 
 More information about the project itself, our solution to the project, eventual obstacles that we encountered, can be found on [this](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/blob/main/docs/documentation.md) .md file. 
-  
-  
+
+Project code can be found on the [link](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/tree/main/application-code/resources), and the helper scripts used in the following [folder](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/tree/main/helper-scripts).
   
   ## Group members
 
