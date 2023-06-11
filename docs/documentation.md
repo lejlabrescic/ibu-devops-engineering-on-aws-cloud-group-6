@@ -9,14 +9,15 @@ The aim of the project was to build and deploy a highly scalable and available w
 It needs to work without any possible downtime and to respond quickly and accordingly, in order to handle errors. 
 
 Since the project can become complex, the best approach is to divide it into multiple steps-phases to ensure that every functionality is working correctly. The picture of the web application can be founded below. 
+![baza](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/145320e5-403a-4512-8cca-badf72558c05)
 
-![baza](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/bd334962-aef8-4a69-aa75-cca188bdb3b6) 
 
 ##  👩‍💻 Phase 1 - Planning the design diagrams and estimating cost 
 ### 💬 Design diagram 
 On the following picture, we can see the diagram of the project, whose detailed description can be seen in the following phases & tasks.
+![initiač](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/0d98bb6d-91af-49f8-84b1-f99c4f31e6fc)
 
-![initiač](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/50d5384e-1a3b-4714-9ef8-32dcfa2c9f1a)
+
 
 ### 💬 Cost estimation 
 Cost estimation was pretty easy to do after finishing the design diagram for the project. For our project, we needed to calculate the total monthly price for all services that our project needs. We carefully looked not to exceed budget and not to enable additional resources that will increase the total price. The full price and total review of costs can be found on the following [link](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/blob/main/docs/Cost%20estimation%20-%20updated.pdf) . The total price after adding all the necessary resources is around *$65*. 
@@ -36,7 +37,8 @@ Because EC2 offers a scalable and adaptable virtual server environment, we launc
 In this task, we needed to perform tests on the application to ensure that it is accessible from the internet and functional.
 Diagram for the phase 2 is seen below. 
 
-![faza2](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/0d711a3f-22ef-40df-bcf1-86e90ed9f9e0)
+![faza2](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/3414e2e3-a5fe-475d-b55f-11e5d7769b1f)
+
 
 
 ##  🤔 Phase 3 - Decoupling the application components
@@ -95,7 +97,8 @@ In this part, we first opened a public IP address of the EC2 instance, in order 
 
 The project diagram for this phase is below. 
 
-![faza 3](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/8f6fcf21-5a34-462f-88d8-763ea9e2373f)
+![faza 3](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/ab28921c-f66d-4067-9551-3cf00d55f3c8)
+
 
 ## ⚡️ Phase 4: Implementing high availability and scalability
 
@@ -126,7 +129,8 @@ The goal was to gain a thorough understanding and hands-on experience with AWS s
   
 The final projects diagram can be seen below. 
   
-![diagram](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/ad85e236-b10a-455b-86d7-a060f3843a0b)
+![diagram](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/d194d390-3f19-4d90-a8df-271033058b7f)
+
 
 ### 🚀 By finishing all the steps and tasks, our project has come to an end. 
 <p align="center">
