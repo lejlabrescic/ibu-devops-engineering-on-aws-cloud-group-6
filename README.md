@@ -19,4 +19,4 @@
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lejlabrescic/)
 
 
-![Logo](https://logos-world.net/wp-content/uploads/2021/08/Amazon-Web-Services-AWS-Emblem.png)
+![Logo](https://w7.pngwing.com/pngs/610/693/png-transparent-amazon-aws-logo-thumbnail.png)
