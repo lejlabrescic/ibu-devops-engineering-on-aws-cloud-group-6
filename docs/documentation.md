@@ -10,25 +10,36 @@ It needs to work without any possible downtime and to respond quickly and accord
 
 Since the project can become complex, the best approach is to divide it into multiple steps-phases to ensure that every functionality is working correctly. The picture of the web application can be founded below. 
 
-
-  ![Logo](https://labs.vocareum.com/web/2524429/1767297.0/ASNLIB/public/docs/lang/en-us/images/SampleSite.png)
-
-
-
+![baza](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/bd334962-aef8-4a69-aa75-cca188bdb3b6) 
 
 ##  👩‍💻 Phase 1 - Planning the design diagrams and estimating cost 
 ### 💬 Design diagram 
+On the following picture, we can see the diagram of the project, whose detailed description can be seen in the following phases & tasks.
+
+![initiač](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/50d5384e-1a3b-4714-9ef8-32dcfa2c9f1a)
+
 ### 💬 Cost estimation 
 Cost estimation was pretty easy to do after finishing the design diagram for the project. For our project, we needed to calculate the total monthly price for all services that our project needs. We carefully looked not to exceed budget and not to enable additional resources that will increase the total price. The full price and total review of costs can be found on the following [link](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/blob/main/docs/Cost%20estimation%20-%20updated.pdf) . The total price after adding all the necessary resources is around *$65*. 
 
 ##  🧠 Phase 2 - Creating a basic functional web application
-
+During this phase, we will build the solution to host web application on the AWS Cloud.
 ### 💬 Task 1 - Creating a virtual network
+In the first task, we built a Virtual Private Cloud (VPC) to create a secure network setting for our application. When creating a VPC we chose an option to automatically create Private and Public Subnets, Internet Gateways, Route Tables, and NAT Gateway. We also needed to create private and public Security Groups. 
+These services and options help us construct safe and scalable environments for our application and are crucial components of setting network infrastructure in AWS.
+Two private subnets and two public subnets allow us to efficiently separate and manage various components. In order to allow connectivity between the VPC and the internet, an internet gateway was created, and route tables were put up to direct traffic inside the VPC. In addition, a NAT gateway was installed to provide private subnet resources with safe outbound internet access.
+
+Security groups serve as virtual firewalls for  EC2 instances. They regulate incoming and outgoing traffic at the instance level, enabling to specify particular rules that decide which kinds of communications are approved or rejected. By implementing security guidelines and filtering network traffic, security groups assist in safeguarding your resources. We opened port 80 for inbound traffic.
+
 ### 💬 Task 2: Creating a virtual machine
+Because EC2 offers a scalable and adaptable virtual server environment, we launched an EC2 instance in the cloud to host the web application. We set up an EC2 instance in a public subnet and configured it to host both the database and the application. 
 ### 💬 Task 3: Testing the deployment
+In this task, we needed to perform tests on the application to ensure that it is accessible from the internet and functional.
+Diagram for the phase 2 is seen below. 
+
+![faza2](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/0d711a3f-22ef-40df-bcf1-86e90ed9f9e0)
+
 
 ##  🤔 Phase 3 - Decoupling the application components
-
 In this phase of the project, we are dealing with the migration of database from EC2 instance to the Amazon RDS. The aim is to have the separate infrastructure for database (Amazon RDS) and web server (EC2 Instance).
 In order to do that, we will use the existing instance, but we will need to reconfigure its details, in order to use it for this task. 
 
@@ -82,12 +93,17 @@ After this, we have been prompted to enter the password, and the data migration 
 ### 💬 Task 7: Testing the application
 In this part, we first opened a public IP address of the EC2 instance, in order to ensure that functionalities are still working correctly. We inserted and deleted a few rows, thus the migration of data was successful.
 
+The project diagram for this phase is below. 
+
+![faza 3](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/8f6fcf21-5a34-462f-88d8-763ea9e2373f)
+
 ## ⚡️ Phase 4: Implementing high availability and scalability
 
 In this phase, after creating a separate infrastructures for database and web server, we want to ensure that our application is working correctly and that it is prone to answer to sudden changes.  We are using the ELB and its services to obtain the properties of high availability and scalability. 
 
 ### 💬 Task 1 - Creating an Application Load Balancer
-In this task, we are creating an Application Load Balancer. While creating the balancer, we are also creating the AMI (Amazon Machine Image) and Target group.  We are also using 2 AZ and existing EC2's instance SG. We also need to create the Launch template.
+In this task, we are creating an Application Load Balancer. While creating the balancer, we are also creating the AMI (Amazon Machine Image) and Target group.  We are also using 2 AZ  and 3 subntes and existing EC2's instance SG. By doing so, we can distribute the incoming traffic among multiple instances in the private subnet, ensuring better performance and fault tolerance.
+We also need to create the Launch template.
 ### 💬 Task 2: Implementing Amazon EC2 Auto Scaling
 To create the AutoScaling group, we will use the existing load balancer that we created. We put the option to have the two instances running. After creating the Auto Scaling, we performed a few tests. We tried to put one of the instances to terminated state. After that, we could have seen that the new instance was created as the backup.
 ### 💬 Task 3: Accessing the application
@@ -107,9 +123,14 @@ In order to test the application, we can open the public DNS of the load balance
 ## ⚡️ Conclusion
 
 The goal was to gain a thorough understanding and hands-on experience with AWS services by successfully accomplishing a project that covers multiple aspects of architecture design, cost estimation, deploying web applications, configuring networks, setting up security measures, ensuring high availability and scalability, and managing access permissions.
-<p align="center">
-  <img src="https://www.metaltoad.com/sites/default/files/styles/large_personal_photo_870x500_/public/2020-05/aws-logo-blog-header.png?itok=t4o3meiH" />
+  
+The final projects diagram can be seen below. 
+  
+![diagram](https://github.com/lejlabrescic/ibu-devops-engineering-on-aws-cloud-group-6/assets/92021817/ad85e236-b10a-455b-86d7-a060f3843a0b)
 
+### 🚀 By finishing all the steps and tasks, our project has come to an end. 
+<p align="center">
+  <img src="https://www.metaltoad.com/sites/default/files/styles/large_personal_photo_870x500_/public/2020-05/aws-logo-blog-header.png?itok=t4o3meiH" /></p>
 
 
  
