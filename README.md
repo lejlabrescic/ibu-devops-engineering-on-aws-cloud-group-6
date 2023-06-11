@@ -5,7 +5,10 @@
   
 
 # 🔗 IBU - DevOps Engineering on AWS Cloud 
-
+### 🚀 Hello world! 
+This is a repository for the project on the course DevOps Engineering on AWS Cloud (IT 334) at the International Burch University. 
+Project was done on the AWS Academy platform and the goal was to build a highly available and scalable web application. 
+More information about the project itself, our solution to the project, eventual obstacles that we encountered, can be found on [this](https://github.com/ganicamna) .md file. 
   
   
   
